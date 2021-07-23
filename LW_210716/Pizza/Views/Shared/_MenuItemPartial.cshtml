@@ -1,0 +1,17 @@
+﻿@model List<MenuItem>
+
+    @foreach (var mi in Model)
+    {
+        <div class="col-md-4 text-center">
+            <div class="menu-wrap">
+                <a href="#" class="menu-img img mb-4" style="background-image: url(../images/@mi.Image);"></a>
+                <div class="text">
+                    <h3><a href="#">@mi.Name</a></h3>
+                    <p>@mi.Desc</p>
+                    <p class="price"><span>$@mi.Price</span></p>
+                    <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>
+                </div>
+            </div>
+        </div>
+    }
+
